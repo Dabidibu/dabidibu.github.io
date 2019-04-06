@@ -1,0 +1,131 @@
+/* Layout */
+
+* {
+    background-color: #2A2A2A;
+}
+
+
+/* Color Theme Swatches in Hex
+.VS-Code-1-hex { color: #123159; }
+.VS-Code-2-hex { color: #6085A6; }
+.VS-Code-3-hex { color: #A7CBD9; }
+.VS-Code-4-hex { color: #764F42; }
+.VS-Code-5-hex { color: #2A2A2A; }
+ */
+
+.message {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
+.message h3 {
+    color: #0f50a5;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #764F42;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.message h5 {
+    color: rgb(211, 211, 211);
+    font-size: 20px;
+}
+
+.message p {
+    color: #0f50a5;
+    font-size: 25px;
+}
+
+li {
+    list-style-type: none;
+    color: #764F42;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li:not(:last-child) {
+    color: #6085A6;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+
+/* Clock styles */
+
+.circle {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #000;
+}
+
+.hour-marks {
+    fill: none;
+    stroke: rgb(211, 211, 211);
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #0f50a5;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #6085A6;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #764F42;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+
+/* Transparent box ensuring arms center properly. */
+
+.sizing-box {
+    fill: none;
+}
+
+
+/* Make all arms rotate around the same center point. */
+
+
+/* Optional: Use transition for animation. */
+
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
