@@ -1,17 +1,8 @@
-/* Layout */
-
 * {
-    background-color: #2A2A2A;
+    margin: 0;
+    padding: 0;
+    background-color: #252525;
 }
-
-
-/* Color Theme Swatches in Hex
-.VS-Code-1-hex { color: #123159; }
-.VS-Code-2-hex { color: #6085A6; }
-.VS-Code-3-hex { color: #A7CBD9; }
-.VS-Code-4-hex { color: #764F42; }
-.VS-Code-5-hex { color: #2A2A2A; }
- */
 
 .message {
     font-family: 'Inconsolata', monospace;
@@ -20,52 +11,49 @@
 
 .message h3 {
     color: #0f50a5;
-    font-size: 30px;
+    font-size: 40px;
+    margin-top: 5px;
 }
 
 a {
     text-decoration: none;
-    color: #764F42;
+    color: #a55135;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-.message h5 {
-    color: rgb(211, 211, 211);
-    font-size: 20px;
+.message p {
+    color: #d3d3d3;
+    font-size: 27px;
+    margin-top: 10px;
 }
 
-.message p {
-    color: #0f50a5;
-    font-size: 25px;
+ul {
+    margin-top: 10px;
 }
 
 li {
     list-style-type: none;
-    color: #764F42;
-    font-size: 20px;
-    font-weight: bold;
+    color: #d3d3d3;
+    font-size: 25px;
 }
 
 li:not(:last-child) {
-    color: #6085A6;
+    color: #2b6e30;
     text-decoration: line-through;
-    font-weight: bold;
 }
 
 .main {
     display: flex;
-    padding: 2em;
-    height: 90vh;
     justify-content: center;
     align-items: middle;
 }
 
-.clockbox,
 #clock {
-    width: 100%;
+    height: 400px;
 }
 
 
@@ -73,59 +61,67 @@ li:not(:last-child) {
 
 .circle {
     fill: none;
-    stroke: #000;
+    stroke: #d3d3d3;
     stroke-width: 9;
-    stroke-miterlimit: 10;
 }
 
 .mid-circle {
-    fill: #000;
+    fill: #d3d3d3;
 }
 
 .hour-marks {
     fill: none;
-    stroke: rgb(211, 211, 211);
+    stroke: #d3d3d3;
     stroke-width: 9;
-    stroke-miterlimit: 10;
 }
 
 .hour-arm {
     fill: none;
     stroke: #0f50a5;
     stroke-width: 17;
-    stroke-miterlimit: 10;
 }
 
 .minute-arm {
     fill: none;
     stroke: #6085A6;
     stroke-width: 11;
-    stroke-miterlimit: 10;
 }
 
 .second-arm {
     fill: none;
-    stroke: #764F42;
+    stroke: #a55135;
     stroke-width: 4;
-    stroke-miterlimit: 10;
 }
-
-
-/* Transparent box ensuring arms center properly. */
 
 .sizing-box {
     fill: none;
 }
-
-
-/* Make all arms rotate around the same center point. */
-
-
-/* Optional: Use transition for animation. */
 
 #hour,
 #minute,
 #second {
     transform-origin: 300px 300px;
     transition: transform .5s ease-in-out;
+}
+
+@media (min-height: 823px) {
+    #clock {
+        height: 900px;
+    }
+    .message {
+        margin: 150px 0 30px 0;
+    }
+    .message h3 {
+        font-size: 80px;
+    }
+    .message p {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    ul {
+        margin-top: 20pz;
+    }
+    li {
+        font-size: 40px;
+    }
 }
