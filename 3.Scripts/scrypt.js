@@ -27,3 +27,7 @@ function runTheClock() {
 }
 
 var interval = setInterval(runTheClock, 1000);
+
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
