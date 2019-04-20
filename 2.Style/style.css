@@ -1,7 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #252525;
+    /* background-color: #252525; */
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 body {
@@ -15,7 +24,7 @@ body {
     margin-top: 50px;
 }
 
-.message h3 {
+.message h1 {
     color: #0f50a5;
     font-size: 40px;
     margin-top: 5px;
@@ -26,6 +35,8 @@ a {
     text-decoration: none;
     color: #a55135;
     font-weight: bold;
+    position: relative;
+    z-index: 2;
 }
 
 a:hover {
@@ -53,7 +64,7 @@ li:not(:last-child) {
     text-decoration: line-through;
 }
 
-.main {
+.main-clock {
     display: flex;
     justify-content: center;
     align-items: middle;
@@ -112,13 +123,13 @@ li:not(:last-child) {
 }
 
 @media (max-width: 768px) {
-    .main {
+    .main-clock {
         justify-content: center;
     }
     .message {
         margin-top: 20px;
     }
-    .message h3 {
+    .message h1 {
         font-size: 30px;
     }
     .message p {
