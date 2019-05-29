@@ -1,144 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    /* background-color: #252525; */
+  margin: 0;
+  padding: 0;
 }
 
 #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: #252525;
-    line-height: 1;
+  background-color: #181818;
 }
 
-.message {
-    font-family: 'Inconsolata', monospace;
-    text-align: center;
-    margin-top: 50px;
+.sec-0 .header__menu {
+  text-align: center;
+  margin-top: 1%;
 }
 
-.message h1 {
-    color: #0f50a5;
-    font-size: 40px;
-    margin-top: 5px;
-    font-weight: bold;
+.sec-0 .header__menu li {
+  font-family: Lato;
+  display: inline;
+  margin-right: 5%;
+  font-style: normal;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    color: #a55135;
-    font-weight: bold;
-    position: relative;
-    z-index: 2;
+.sec-0 .header__menu li a {
+  color: #DFDFDF;
+  text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.sec-0 .header__menu li a:hover {
+  color: #B131FF;
+  border-bottom: 3px solid;
+  -o-border-image: linear-gradient(30deg, #B131FF, rgba(250, 224, 66, 0.7)) 1;
+     border-image: linear-gradient(30deg, #B131FF, rgba(250, 224, 66, 0.7)) 1;
 }
 
-.message p {
-    color: #d3d3d3;
-    font-size: 27px;
-    margin-top: 10px;
+.sec-0 .header__menu li:last-child {
+  margin-right: 0;
 }
 
-ul {
-    margin-top: 10px;
+.sec-0 .sec-0__content .logo-svg {
+  position: relative;
+  display: block;
+  margin: 10% auto 0 auto;
+  z-index: -1;
 }
 
-li {
-    list-style-type: none;
-    color: #d3d3d3;
-    font-size: 25px;
+.sec-0 .sec-0__content .quote-div {
+  margin-top: -170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 50px;
+  color: #ffffff;
 }
 
-li:not(:last-child) {
-    color: #2b6e30;
-    text-decoration: line-through;
+.sec-0 .sec-0__content .quote {
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 10px;
 }
 
-.main-clock {
-    display: flex;
-    justify-content: center;
-    align-items: middle;
+.sec-0 .sec-0__content #typed {
+  font-weight: bolder;
+  background: linear-gradient(45deg, #B131FF 33%, rgba(247, 218, 31, 0.7) 66%, #B131FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #B131FF;
 }
 
-#clock {
-    height: 400px;
+.sec-0 .sec-0__content .typed-cursor {
+  font-size: 75px;
+  font-weight: bolder;
 }
 
-
-/* Clock styles */
-
-.circle {
-    fill: none;
-    stroke: #d3d3d3;
-    stroke-width: 9;
+.sec-0 .sec-0__content .quote-h2 {
+  margin-top: 10px;
+  text-align: center;
+  color: #B131FF;
+  font-family: Inconsolata;
+  font-weight: 400;
 }
-
-.mid-circle {
-    fill: #d3d3d3;
-}
-
-.hour-marks {
-    fill: none;
-    stroke: #d3d3d3;
-    stroke-width: 9;
-}
-
-.hour-arm {
-    fill: none;
-    stroke: #0f50a5;
-    stroke-width: 17;
-}
-
-.minute-arm {
-    fill: none;
-    stroke: #2b6e30;
-    stroke-width: 11;
-}
-
-.second-arm {
-    fill: none;
-    stroke: #a55135;
-    stroke-width: 4;
-}
-
-.sizing-box {
-    fill: none;
-}
-
-#hour,
-#minute,
-#second {
-    transform-origin: 300px 300px;
-    transition: transform .5s ease-in-out;
-}
-
-@media (max-width: 768px) {
-    .main-clock {
-        justify-content: center;
-    }
-    .message {
-        margin-top: 20px;
-    }
-    .message h1 {
-        font-size: 30px;
-    }
-    .message p {
-        font-size: 18px;
-    }
-    #clock {
-        height: 330px;
-    }
-    li {
-        font-size: 18px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

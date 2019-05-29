@@ -1,0 +1,91 @@
+    @import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        // background-color: #252525;
+        // font-family: 'Inconsolata', monospace;
+    }
+    
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        background-color: #181818;
+    }
+    
+    .sec-0 {
+        .header__menu {
+            text-align: center;
+            margin-top: 1%;
+            li {
+                font-family: Lato;
+                display: inline;
+                margin-right: 5%;
+                font-style: normal;
+                font-size: 20px;
+                cursor: pointer;
+                a {
+                    color: #DFDFDF;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: #B131FF;
+                    border-bottom: 3px solid;
+                    border-image: linear-gradient(30deg, #B131FF, rgba(250, 224, 66, 0.7)) 1;
+                }
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+        .sec-0__content {
+            .logo-svg {
+                position: relative;
+                display: block;
+                margin: 10% auto 0 auto;
+                z-index: -1;
+            }
+            .quote-div {
+                margin-top: -170px;
+                display: flex;
+                justify-content: center;
+                font-size: 50px;
+                color: #ffffff;
+            }
+            .quote {
+                display: inline;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                letter-spacing: 10px;
+            }
+            #typed {
+                // color: #B131FF;
+                font-weight: bolder;
+                // border-bottom: 5px solid;
+                // border-image: linear-gradient(30deg, #B131FF, rgba(250, 224, 66, 0.7)) 1;
+                background: linear-gradient(45deg, #B131FF 33%, rgba(247, 218, 31, 0.7) 66%, #B131FF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #B131FF;
+            }
+            .typed-cursor {
+                font-size: 75px;
+                // color: #B131FF;
+                font-weight: bolder;
+            }
+            .quote-h2 {
+                margin-top: 10px;
+                text-align: center;
+                color: #B131FF;
+                font-family: Inconsolata;
+                font-weight: 400;
+            }
+        }
+    }
