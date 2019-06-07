@@ -1,91 +1,180 @@
-    @import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
-    @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        // background-color: #252525;
-        // font-family: 'Inconsolata', monospace;
+@import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@mixin open-mark {
+    color: #B131FF;
+    font-size: 30px;
+    margin: 3% 0 15% 30px;
+}
+
+@mixin close-mark {
+    color: #B131FF;
+    font-size: 30px;
+    margin: 16% 0 0 30px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
     }
-    
-    #particles-js {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    50% {
+        opacity: 0.2;
     }
-    
-    body {
-        background-color: #181818;
+    100% {
+        opacity: 1;
     }
-    
-    .sec-0 {
-        .header__menu {
-            text-align: center;
-            margin-top: 1%;
-            li {
-                font-family: Lato;
-                display: inline;
-                margin-right: 5%;
-                font-style: normal;
-                font-size: 20px;
-                cursor: pointer;
-                a {
-                    color: #DFDFDF;
-                    text-decoration: none;
-                }
-                a:hover {
-                    color: #B131FF;
-                    border-bottom: 3px solid;
-                    border-image: linear-gradient(30deg, #B131FF, rgba(250, 224, 66, 0.7)) 1;
-                }
-            }
-            li:last-child {
-                margin-right: 0;
-            }
-        }
-        .sec-0__content {
-            .logo-svg {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    // background-color: #252525;
+    // font-family: 'Inconsolata', monospace;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #181818;
+}
+
+.sec-0 {
+    .header__menu {
+        text-align: center;
+        margin-top: 1%;
+        li {
+            font-family: Lato;
+            display: inline;
+            margin-right: 5%;
+            font-style: normal;
+            font-size: 20px;
+            cursor: pointer;
+            a {
                 position: relative;
-                display: block;
-                margin: 10% auto 0 auto;
-                z-index: -1;
+                z-index: 1;
+                color: #DFDFDF;
+                text-decoration: none;
+                transition: 0.5s ease;
+                border-top: 0px solid transparent;
+                border-bottom: 0px solid transparent;
             }
-            .quote-div {
-                margin-top: -170px;
-                display: flex;
-                justify-content: center;
-                font-size: 50px;
-                color: #ffffff;
-            }
-            .quote {
-                display: inline;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
-                letter-spacing: 10px;
-            }
-            #typed {
-                // color: #B131FF;
-                font-weight: bolder;
-                // border-bottom: 5px solid;
-                // border-image: linear-gradient(30deg, #B131FF, rgba(250, 224, 66, 0.7)) 1;
-                background: linear-gradient(45deg, #B131FF 33%, rgba(247, 218, 31, 0.7) 66%, #B131FF);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                color: #B131FF;
-            }
-            .typed-cursor {
-                font-size: 75px;
-                // color: #B131FF;
-                font-weight: bolder;
-            }
-            .quote-h2 {
-                margin-top: 10px;
-                text-align: center;
-                color: #B131FF;
-                font-family: Inconsolata;
-                font-weight: 400;
+            a:hover {
+                transition: 0.5s ease;
+                border-top: 4px solid #B131FF;
+                border-bottom: 4px solid #B131FF;
+                padding: 6px 0;
             }
         }
+        li:last-child {
+            margin-right: 0;
+        }
     }
+    .sec-0__content {
+        .logo-svg {
+            position: relative;
+            z-index: -1;
+            display: block;
+            margin: 10% auto 0 auto;
+        }
+        .quote-div {
+            // position: relative;
+            // z-index: 1;
+            margin-top: -170px;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            color: #ffffff;
+        }
+        .quote {
+            display: inline;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            letter-spacing: 10px;
+        }
+        #typed {
+            // color: #B131FF;
+            font-weight: bolder;
+            // border-bottom: 5px solid;
+            // border-image: linear-gradient(30deg, #B131FF, rgba(250, 224, 66, 0.7)) 1;
+            background: linear-gradient(45deg, #B131FF 33%, #f7da1f 66%, #B131FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #B131FF;
+        }
+        .typed-cursor {
+            font-size: 75px;
+            // color: #B131FF;
+            font-weight: bolder;
+        }
+        .quote-h2 {
+            padding-top: 5%;
+            margin-top: 10px;
+            text-align: center;
+            color: #B131FF;
+            font-family: Inconsolata;
+            font-weight: 400;
+        }
+    }
+    .mouse-down {
+        position: relative;
+        z-index: 1;
+        display: block;
+        margin: 5% auto 0 auto;
+        animation: pulse 3s infinite;
+    }
+}
+
+.sec-1 {
+    font-family: Inconsolata;
+    .about-me-open-mark {
+        @include open-mark;
+    }
+    .about-me-close-mark {
+        @include close-mark;
+    }
+    .sec-1__content {
+        align-items: center;
+        text-align: center;
+        h3 {
+            font-size: 40px;
+            color: #B131FF;
+            align-items: center;
+            text-align: center;
+        }
+        p {
+            margin-top: 25px;
+            font-family: Lato;
+            font-size: 28px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.sec-2 {
+    font-family: Inconsolata;
+    .project-open-mark {
+        @include open-mark;
+    }
+    .project-close-mark {
+        @include close-mark;
+        margin: -10% 0 0 30px; //draft
+    }
+}
+
+footer {
+    font-family: Inconsolata;
+    margin: 30px 0 10px 0;
+    p {
+        color: #d3d3d3;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        line-height: 37px;
+    }
+}
