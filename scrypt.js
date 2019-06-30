@@ -1,3 +1,13 @@
+// When the user scrolls the page, execute progressBar 
+window.onscroll = function() { progressBar() };
+
+function progressBar() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 //плавный переход по якорям
 $(document).ready(function() {
 
@@ -37,22 +47,65 @@ $('document').ready(function() {
     });
 });
 
-//hover for projects
-const cards = document.querySelectorAll('.card-block');
-for (let i = 0; i < cards.length; i++) {
-    const card = cards[i];
-    card.addEventListener('mousemove', startRotate);
-    card.addEventListener('mouseout', stopRotate);
-}
+// //hover for projects
+// const cards = document.querySelectorAll('.card-block');
+// for (let i = 0; i < cards.length; i++) {
+//     const card = cards[i];
+//     card.addEventListener('mousemove', startRotate);
+//     card.addEventListener('mouseout', stopRotate);
+// }
 
-function startRotate(event) {
-    const cardItem = this.querySelector('.card-item');
-    const halfHeight = cardItem.offsetHeight / 2;
-    const halfWidth = cardItem.offsetWidth / 2;
-    cardItem.style.transform = 'rotateX(' + -(event.offsetY - halfHeight) / 7 + 'deg) rotateY(' + (event.offsetX - halfWidth) / 20 + 'deg)'
-}
+// function startRotate(event) {
+//     const cardItem = this.querySelector('.card-item');
+//     const halfHeight = cardItem.offsetHeight / 2;
+//     const halfWidth = cardItem.offsetWidth / 2;
+//     cardItem.style.transform = 'rotateX(' + -(event.offsetY - halfHeight) / 7 + 'deg) rotateY(' + (event.offsetX - halfWidth) / 20 + 'deg)'
+// }
 
-function stopRotate(event) {
-    const cardItem = this.querySelector('.card-item');
-    cardItem.style.transform = 'rotate(0)'
-}
+// function stopRotate(event) {
+//     const cardItem = this.querySelector('.card-item');
+//     cardItem.style.transform = 'rotate(0)'
+// }
+
+// скролл колесиком
+// var anchors = [];
+// var currentAnchor = -1;
+// var isAnimating = false;
+
+// $(function() {
+
+//     function updateAnchors() {
+//         anchors = [];
+//         $('.anchor').each(function(i, element) {
+//             anchors.push($(element).offset().top);
+//         });
+//     }
+
+//     $('body').on('mousewheel', function(e) {
+//         e.preventDefault();
+//         e.stopPropagation();
+//         if (isAnimating) {
+//             return false;
+//         }
+//         isAnimating = true;
+//         // Increase or reset current anchor
+//         if (e.originalEvent.wheelDelta >= 0) {
+//             currentAnchor--;
+//         } else {
+//             currentAnchor++;
+//         }
+//         if (currentAnchor > (anchors.length - 1) ||
+//             currentAnchor < 0) {
+//             currentAnchor = 0;
+//         }
+//         isAnimating = true;
+//         $('html, body').animate({
+//             scrollTop: parseInt(anchors[currentAnchor])
+//         }, 500, 'swing', function() {
+//             isAnimating = false;
+//         });
+//     });
+
+//     updateAnchors();
+
+// });

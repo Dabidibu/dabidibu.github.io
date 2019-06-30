@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Developer — Andrew</title>
-    <link rel="stylesheet" href="5.Assets/Bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="5.Assets/Bootstrap/css/bootstrap.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="2.Style/style.css">
 </head>
 
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <div class="main">
-        <section class="sec-0">
+        <section class="sec-0 anchor" id="anchor1">
             <header>
-                <ul class="header__menu">
+                <ul class="header__menu menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#About-me">About me</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#Projects">Projects</a></li>
                     <li><a href="#">Experience</a></li>
                     <li><a href="#">Technology</a></li>
                     <li><a href="#">Contact</a></li>
@@ -36,7 +39,7 @@
             </div>
             <img class="mouse-down" src="4.Images/mouse-down.svg" alt="mouse down">
         </section>
-        <section class="sec-1">
+        <section class="sec-1 anchor" id="anchor2">
             <p class="about-me-open-mark" id="About-me" data-aos="fade-right" data-aos-duration="300">&lt;About me&gt;</p>
             <div class="sec-1__content">
                 <h3 data-aos="fade-down" data-aos-duration="300">
@@ -47,11 +50,29 @@
             <p class="about-me-close-mark" data-aos="fade-right" data-aos-duration="300">&lt;/About me&gt;</p>
         </section>
         <section class="sec-2">
-            <p class="project-open-mark" data-aos="fade-right" data-aos-duration="300">&lt;Projects&gt;</p>
+            <p class="project-open-mark" id="Projects" data-aos="fade-right" data-aos-duration="300">&lt;Projects&gt;</p>
             <div class="container">
                 <div class="card-block">
-                    <img class="card-item" src="4.Images/project.png" alt="progect name">
+                    <img class="card-item " src="4.Images/project.png" alt="progect photo">
+                    <img class="card-item " src="4.Images/project.png" alt="progect photo">
+                    <img class="card-item " src="4.Images/project.png" alt="progect photo">
+                    <img class="card-item " src="4.Images/project.png" alt="progect photo">
                 </div>
+                <div class="about-project">
+                    <h5><a href="#">dabidibu.com</a></h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore vel quasi laborum ullam maxime vitae ipsa eum error. Nihil molestias sequi ad ratione praesentium architecto sit ex expedita quaerat?</p>
+                </div>
+                <div class="card-block">
+                    <img class="card-item " src="4.Images/project.png" alt="progect photo">
+                    <img class="card-item " src="4.Images/project.png" alt="progect photo">
+                    <img class="card-item " src="4.Images/project.png" alt="progect photo">
+                    <img class="card-item " src="4.Images/project.png" alt="progect photo">
+                </div>
+                <div class="about-project">
+                    <h5><a href="#">dabidibu.com</a></h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore vel quasi laborum ullam maxime vitae ipsa eum error. Nihil molestias sequi ad ratione praesentium architecto sit ex expedita quaerat?</p>
+                </div>
+
             </div>
             <p class="project-close-mark" data-aos="fade-right" data-aos-duration="300">&lt;/Projects&gt;</p>
         </section>
