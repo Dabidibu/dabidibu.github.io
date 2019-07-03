@@ -1,0 +1,33 @@
+[{
+        "name": "JavaScript",
+        "value": 354
+    },
+    {
+        "name": "HTML",
+        "value": 245
+    },
+    {
+        "name": "CSS",
+        "value": 187
+    },
+
+    {
+        "name": "SCSS/SASS",
+        "value": 123
+    },
+
+    {
+        "name": "jQuery",
+        "value": 87
+    },
+
+    {
+        "name": "Vue.js",
+        "value": 45
+    },
+    {
+        "name": "Other",
+        "value": 23
+    }
+
+]
