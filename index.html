@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Developer — Andrew</title>
-    <!-- <link rel="stylesheet" href="5.Assets/Bootstrap/css/bootstrap.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="2.Style/style.css">
 </head>
@@ -16,10 +15,9 @@
         <div class="progress-bar" id="myBar"></div>
     </div>
     <div class="main">
-        <section class="sec-0 anchor" id="anchor1">
+        <section class="sec-0" id="anchor1">
             <header>
                 <ul class="header__menu menu">
-                    <li><a href="#">Home</a></li>
                     <li><a href="#About-me">About me</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
@@ -31,7 +29,6 @@
             <div class="sec-0__content">
                 <img class="logo-svg" src="4.Images/Vector.svg" alt="Vector" />
                 <div class="quote-div">
-                    <!-- костыль -->
                     <h1 class=" col-7 quote text-right">Make Internet</h1>
                     <h1 class="quote col " id="typed"></h1>
                 </div>
@@ -39,7 +36,7 @@
                 <img class="mouse-down" src="4.Images/mouse-down.svg" alt="mouse down">
             </div>
         </section>
-        <section class="sec-1 anchor" id="anchor2">
+        <section class="sec-1" id="anchor2">
             <p class="about-me-open-mark" id="About-me" data-aos="fade-right" data-aos-duration="300">&lt;About me&gt;</p>
             <div class="sec-1__content">
                 <h3 data-aos="fade-down" data-aos-duration="300">
@@ -62,6 +59,7 @@
                     <div class="about-project">
                         <h5><a href="#">dabidibu.com</a></h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore vel quasi laborum ullam maxime vitae ipsa eum error. Nihil molestias sequi ad ratione praesentium architecto sit ex expedita quaerat?</p>
+                        <p class="tehnology"><span>Used technology:</span> HTML, SCSS, JavaScript, amcharts, JSON</p>
                     </div>
                     <div class="card-block">
                         <img class="card-item " src="4.Images/project.png" alt="progect photo">
@@ -72,6 +70,7 @@
                     <div class="about-project">
                         <h5><a href="#">dabidibu.com</a></h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore vel quasi laborum ullam maxime vitae ipsa eum error. Nihil molestias sequi ad ratione praesentium architecto sit ex expedita quaerat?</p>
+                        <p class="tehnology"><span>Used technology:</span> HTML, SCSS, JavaScript, amcharts, JSON</p>
                     </div>
                 </div>
             </div>
@@ -104,17 +103,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <!-- <script type="text/javascript" src="5.Assets/FullPage-js/fullpage.js"></script> -->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Resources amcharts.com-->
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
-    <!-- <script src="5.Assets\amcharts\costom-theme.js"></script> -->
+    <script src="https://www.amcharts.com/lib/4/plugins/forceDirected.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
+    <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
     <script src="scrypt.js"></script>
+    <script src="3.Scripts\amcharts.js"></script>
+
+    <script src="3.Scripts\progressBar.js"></script>
+    <script src="3.Scripts\forAnchors.js"></script>
+
+    <script src="5.Assets\Particles-js\particles.js"></script>
+    <script src="5.Assets\AOS\AOS.js"></script>
+    <script src="5.Assets\Typed-js\typed.js"></script>
+
 
 
 </body>

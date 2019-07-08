@@ -1,33 +1,130 @@
 [{
-        "name": "JavaScript",
-        "value": 354
-    },
-    {
-        "name": "HTML",
-        "value": 245
-    },
-    {
-        "name": "CSS",
-        "value": 187
-    },
-
-    {
-        "name": "SCSS/SASS",
-        "value": 123
-    },
-
-    {
+    "name": "HTML",
+    "value": 100,
+    "linkWith": [
+        "JavaScript"
+    ],
+    "image": "4.Images/favicon.png",
+    "fontSize": 5,
+    "color": "#ee511f",
+    "children": [{
+        "name": "Bootstrap",
+        "color": "#563d7c",
+        "value": 50,
+        "linkWith": [
+            "CSS"
+        ]
+    }]
+}, {
+    "name": "CSS",
+    "value": 100,
+    "color": "#419ad7",
+    "linkWith": [
+        "HTML",
+        "JavaScript"
+    ],
+    "children": [{
+            "name": "SCSS",
+            "value": 50,
+            "color": "#c26b99"
+        },
+        {
+            "name": "SASS",
+            "value": 50,
+            "color": "#cd649a"
+        }
+    ]
+}, {
+    "name": "JavaScript",
+    "color": "#f7df1c",
+    "value": 100,
+    "linkWith": [
+        "HTML",
+        "CSS"
+    ],
+    "children": [{
         "name": "jQuery",
-        "value": 87
-    },
+        "value": 30,
+        "color": "#0769af"
+    }]
+}, {
+    "name": "Other",
+    "value": 100,
+    "color": "#9c9c9c",
 
-    {
-        "name": "Vue.js",
-        "value": 45
-    },
-    {
-        "name": "Other",
-        "value": 23
-    }
+    "children": [{
+            "name": "C#",
+            "value": 35,
+            "collapsed": "off",
+            "color": "#009405",
+            "children": [{
+                "name": "Unity",
+                "value": 20,
+                "color": "white"
+            }]
+        },
+        {
+            "name": "SQL",
+            "collapsed": "off",
+            "value": 50,
+            "children": [{
+                "name": "phpMyAdmin",
+                "value": 30
+            }]
+        }
+    ]
+}, {
+    "name": "Soft Skils",
+    "value": 100,
+    "color": "#96c439",
+    "collapsed": "off",
+    "children": [{
+            "name": "Empathy",
+            "value": 20
 
-]
+        },
+        {
+            "name": "Communication",
+            "value": 20
+        },
+        {
+            "name": "Teamwork",
+            "value": 20
+
+        },
+        {
+            "name": "Approachability",
+            "value": 20
+        },
+        {
+            "name": "Helpfulness",
+            "value": 20
+
+        },
+        {
+            "name": "Patience",
+            "value": 20
+        },
+        {
+            "name": "Open-mindedness",
+            "value": 20
+        },
+        {
+            "name": "Problem solving",
+            "value": 20
+        },
+        {
+            "name": "Accountability",
+            "value": 20
+        },
+        {
+            "name": "Creativity",
+            "value": 20
+        },
+        {
+            "name": "Time management",
+            "value": 20
+        }
+
+    ]
+}]
