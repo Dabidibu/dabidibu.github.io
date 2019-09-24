@@ -21,26 +21,17 @@ body {
     font-family: 'Inconsolata', monospace;
     text-align: center;
     position: relative;
-        top: 50%;
-        transform: perspective(1px) translateY(-50%);
+    padding-top: 200px;
 }
 
 .message h1 {
-    font-size: 40px;
-  font-weight: bolder;
-            background: linear-gradient(90deg, #B131FF 30%, #f7da1f 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: #B131FF;
-    
-}
-
-
-
-
-
-a:hover {
-    text-decoration: underline;
+    font-size: 45px;
+    font-weight: bolder;
+    background: linear-gradient(90deg, #B131FF 30%, #f7da1f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #B131FF;
+    width: auto;
 }
 
 .message p {
@@ -49,96 +40,11 @@ a:hover {
     margin-top: 15px;
 }
 
-ul {
-    margin-top: 10px;
-}
-
-li {
-    list-style-type: none;
-    color: #d3d3d3;
-    font-size: 25px;
-}
-
-li:not(:last-child) {
-    color: #2b6e30;
-    text-decoration: line-through;
-}
-
-.main-clock {
-    display: flex;
-    justify-content: center;
-    align-items: middle;
-}
-
-#clock {
-    height: 400px;
-}
-
-
-/* Clock styles */
-
-.circle {
-    fill: none;
-    stroke: #d3d3d3;
-    stroke-width: 9;
-}
-
-.mid-circle {
-    fill: #d3d3d3;
-}
-
-.hour-marks {
-    fill: none;
-    stroke: #d3d3d3;
-    stroke-width: 9;
-}
-
-.hour-arm {
-    fill: none;
-    stroke: #0f50a5;
-    stroke-width: 17;
-}
-
-.minute-arm {
-    fill: none;
-    stroke: #2b6e30;
-    stroke-width: 11;
-}
-
-.second-arm {
-    fill: none;
-    stroke: #a55135;
-    stroke-width: 4;
-}
-
-.sizing-box {
-    fill: none;
-}
-
-#hour,
-#minute,
-#second {
-    transform-origin: 300px 300px;
-    transition: transform .5s ease-in-out;
-}
-
 @media (max-width: 768px) {
-    .main-clock {
-        justify-content: center;
-    }
-    .message {
-        margin-top: 20px;
-    }
     .message h1 {
         font-size: 30px;
     }
     .message p {
-        font-size: 18px;
-    }
-    #clock {
-        height: 330px;
-    }
-    li {
         font-size: 18px;
     }
 }
