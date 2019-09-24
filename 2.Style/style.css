@@ -20,29 +20,24 @@ body {
 .message {
     font-family: 'Inconsolata', monospace;
     text-align: center;
-    margin-top: 10%;
+    position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
 }
 
 .message h1 {
-    color: #0f50a5;
     font-size: 40px;
-    top: 10px;
-    font-weight: bold;
+  font-weight: bolder;
+            background: linear-gradient(90deg, #B131FF 30%, #f7da1f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #B131FF;
+    
 }
 
-.message h2 {
-    color: #a55135;
-    font-size: 22px;
-    margin-top: -10px;
-}
 
-a {
-    text-decoration: none;
-    color: #a55135;
-    font-weight: bold;
-    position: relative;
-    z-index: 2;
-}
+
+
 
 a:hover {
     text-decoration: underline;
